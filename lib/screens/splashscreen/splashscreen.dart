@@ -1,3 +1,4 @@
+import 'package:audiobooksapp/screens/homescreen/homescreen.dart';
 import 'package:flutter/material.dart';
 
 class splashscreen extends StatelessWidget {
@@ -38,15 +39,15 @@ SizedBox(),
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Container(
-                          width: 100,
-                          height: 10,
+                          width: size.width*0.30,
+                          height:size.height*0.010,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(100),
                             color: Color(0xffC44536),
                           ),
 
                         ),
-                        SizedBox(height: 50,),
+                        SizedBox(height: size.height*0.070,),
                         Text('oxu\ndinle\nilham al',
                         style: TextStyle(
                           height: 1.75,
@@ -64,8 +65,8 @@ SizedBox(),
                     children: [
                       Container(
                         margin: EdgeInsets.all(30),
-                        height: 50,
-                        width: 100,
+                        height: size.height*0.060,
+                        width: size.width*0.25,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
                           color:  Color(0xffC44536),
@@ -76,7 +77,10 @@ SizedBox(),
                             color: Colors.white,
                             size: 30,
                           ),
-                          onPressed: (){},
+                          onPressed: (){                        Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const homescreen()));},
                         ),
                       )
                     ],
