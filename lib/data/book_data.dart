@@ -1,4 +1,5 @@
 import 'package:audiobooksapp/model/book_model.dart';
+<<<<<<< HEAD
 List<Book> _allBooks=[
 
   Book(
@@ -60,6 +61,11 @@ List<Book> _recentBooks=[
     rating:4.0,
   ),
 ];
+=======
+List<Book> _allBooks=[];
+
+List<Book> _recentBooks=[];
+>>>>>>> origin/master
 
 
 List<Book> get allbooks{
